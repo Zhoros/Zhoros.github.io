@@ -4,6 +4,10 @@
 	--pico-spacing: 0;
 }
 
+.space {
+	height: 15px;
+}
+
 .description {
 	text-align: center;
 }
