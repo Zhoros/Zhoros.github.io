@@ -1,5 +1,4 @@
 :root {
-	--color-scheme: dark;
 	--pico-typography-spacing-vertical: 0;
 	--pico-spacing: 0;
 	-webkit-user-select: none;
@@ -25,8 +24,9 @@
 	padding: 20px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	background-color: white;
+	background-color: var(--pico-form-element-background-color);
 	transition: transform .2s;
+	will-change: transform;
 }
 
 .project:hover {
@@ -34,8 +34,8 @@
 }
 
 .gold {
-	color: #525FE1;
-	font-weight: 600;
+	color: #F7931A;
+	font-weight: 650;
 }
 
 .techContainer {
