@@ -1,204 +1,291 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Marvin Enrico | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-zinc-950 text-zinc-100 font-sans selection:bg-emerald-500 selection:text-zinc-950 antialiased">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="font-bold text-xl tracking-tighter">Marvin Enrico</span>
-            <div class="space-x-8 text-sm font-medium">
-                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="pt-32 pb-8 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                Marvin Enrico
+    <main class="max-w-5xl mx-auto px-6 py-20 md:py-32 space-y-16">
+        
+        <header class="space-y-4 max-w-2xl">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-100">
+                Hi, I'm <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Marvin Enrico</span>.
             </h1>
-            <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
-								I'm a passionate developer who began coding in middle school. Over the years, I've built a strong foundation in software development with experience in building native Windows, Android, and full stack web apps
+            <p class="text-zinc-400 text-base md:text-lg leading-relaxed">
+                I'm a passionate developer who began coding in middle school. Over the years, I've built a strong foundation in software development with experience in building native Windows, Android, and full-stack web apps.
             </p>
-						<br>
-            <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
-								Contact: marvindy9@gmail.com
-            </p>
-        </div>
-    </header>
+            <div class="pt-2">
+                <a href="mailto:marvindy9@gmail.com" class="text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors">
+                    marvindy9@gmail.com →
+                </a>
+            </div>
+        </header>
 
-    <section id="projects" class="py-10 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold mb-10">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <hr class="border-zinc-900">
 
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-									<img src="monitor.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Thoramon</h3>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">NodeJS</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Svelte</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">SQLite</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Docker</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										Sophisticated linux server monitoring tool that doesn't require any installation on target machine. It can monitor CPU, memory, network and disk I/O with historical data	
-									</p>
+        <section class="space-y-8">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Selected Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
 
-									<a href="https://github.com/Zhoros/Thoramon" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-									<img src="mail.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">NortixMail</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">5000+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">NodeJS</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Svelte</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">SQLite</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Docker</span>
+                <!-- Project: Thoramon -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="monitor.png" alt="Thoramon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">Thoramon</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            Sophisticated Linux server monitoring tool that doesn't require any installation on target machines. Monitors CPU, memory, network, and disk I/O with historical data tracking.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/Thoramon" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex flex-wrap gap-2 text-xs font-mono text-zinc-400 items-center justify-between">
+                        <div class="flex gap-2">
+                            <span>NODEJS</span><span>•</span><span>SVELTE</span><span>•</span><span>SQLITE</span><span>•</span><span>DOCKER</span>
+                        </div>
+                    </div>
                 </div>
-									<p class="text-slate-600 mb-6 text-md">
-										A fully functional email server with TLS support that lets you create unlimited email addresses under your own domain. These addresses can be used to sign up for websites without exposing your real email to reduce spam
-									</p>
 
-									<a href="https://github.com/Zhoros/NortixMail" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-									<img src="superbin.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">SuperBin</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">1000+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Go</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">SQLite</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Docker</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										File sharing, url shortener and pastebin all in one place with QR code, password and cURL support. Uses stream based cryptography and data processing that can handle gigabytes of data with fixed memory and cpu usage. It can run on anything including PaaS like repl.it or Render and is very easy to customize.
-									</p>
+                <!-- Project: NortixMail -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="mail.png" alt="NortixMail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">NortixMail</h3>
+                            <div class="flex items-center gap-1 font-sans text-sm font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 shadow-xs">
+                                <span>5,000+ downloads</span>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            A fully functional email server with TLS support that lets you create unlimited addresses under your own domain to mask your real email and cut down on spam.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/NortixMail" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex items-center justify-between text-xs font-mono">
+                        <div class="flex gap-2 text-zinc-400">
+                            <span>NODEJS</span><span>•</span><span>SVELTE</span><span>•</span><span>DOCKER</span>
+                        </div>
+                    </div>
+                </div>
 
-									<a href="https://github.com/Zhoros/SuperBin" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
+                <!-- Project: SuperBin -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="superbin.png" alt="SuperBin" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">SuperBin</h3>
+                            <div class="flex items-center gap-1 font-sans text-sm font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 shadow-xs">
+                                <span>1,000+ downloads</span>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            All-in-one file sharing, URL shortener, and pastebin. Employs stream-based cryptography and high-performance processing to manage gigabytes of data with fixed memory.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/SuperBin" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex items-center justify-between text-xs font-mono">
+                        <div class="flex gap-2 text-zinc-400">
+                            <span>GO</span><span>•</span><span>SQLITE</span><span>•</span><span>DOCKER</span>
+                        </div>
+                    </div>
+                </div>
 
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-									<img src="singleexe.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Single-Exe</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">300+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">C/C++</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">CMake</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">WinAPI</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										A sophisticated tool that can convert almost anything into a single .exe file with smaller size, it can convert applications with multiple .dll files, multiple source file (.js, .py, .php, etc) and shell scripts (.bat, .ps1, .vbs, etc) into a single compressed, portable .exe file. It also uses memory mapping that can handle massive files.
-									</p>
+                <!-- Project: Single-Exe -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="singleexe.png" alt="Single-Exe" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">Single-Exe</h3>
+                            <div class="flex items-center gap-1 font-sans text-sm font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 shadow-xs">
+                                <span>300+ downloads</span>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            Converts complex applications containing multi-file scripts (.js, .py, .ps1) or multiple tracking dependencies (.dll) into a single, light-weight, memory-mapped binary wrapper.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/Single-Exe" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex items-center justify-between text-xs font-mono">
+                        <div class="flex gap-2 text-zinc-400">
+                            <span>C/C++</span><span>•</span><span>CMAKE</span><span>•</span><span>WINAPI</span>
+                        </div>
+                    </div>
+                </div>
 
-									<a href="https://github.com/Zhoros/Single-Exe" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
+                <!-- Project: Animated Wallpaper -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50 bg-zinc-950">
+                            <video src="wallpaper.mp4" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" autoplay muted loop playsinline></video>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">Animated Wallpaper</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            Ultra-lightweight 1MB wallpaper runtime that handles high-fidelity .mp4 or .gif backgrounds. Smart lifecycle logic automatically pauses loops when hidden by windows.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/Animated-Wallpaper" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex flex-wrap gap-2 text-xs font-mono text-zinc-400 items-center justify-between">
+                        <div class="flex gap-2">
+                            <span>C/C++</span><span>•</span><span>CMAKE</span><span>•</span><span>WINAPI</span>
+                        </div>
+                    </div>
+                </div>
 
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-								<video src="wallpaper.mp4" class="rounded-3xl" autoplay muted loop></video>
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Animated Wallpaper</h3>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">C/C++</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">CMake</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">WinAPI</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										An extremely lightweight, 1MB wallpaper engine that allows you to set .mp4 or .gif as your desktop wallpaper. It automatically pauses itself when it detects that the wallpaper is covered by another app to save system resources
-									</p>
+                <!-- Project: Xen Stream -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="stream.png" alt="Xen Stream" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">Xen Stream</h3>
+                            <div class="flex items-center gap-1 font-sans text-sm font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 shadow-xs">
+                                <span>100+ downloads</span>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            Straightforward video streaming application designed with granular multi-language subtitle parser support and an integrated dynamic layout aspect-ratio black-bars hider.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/Xen-Stream" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex items-center justify-between text-xs font-mono">
+                        <div class="flex gap-2 text-zinc-400">
+                            <span>NODEJS</span><span>•</span><span>TYPESCRIPT</span><span>•</span><span>DOCKER</span>
+                        </div>
+                    </div>
+                </div>
 
-									<a href="https://github.com/Zhoros/Animated-Wallpaper" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-								<img src="stream.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Xen Stream</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">100+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">NodeJS</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Typescript</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Docker</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										A straightforward, easy-to-use video streaming web app with subtitle support and video black bars hider. It has a fully responsive UI, allowing you to watch on any device, anywhere, seamlessly
-									</p>
-
-									<a href="https://github.com/Zhoros/XenStream" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-								<img src="screen.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Screen Aware</h3>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Java</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Android</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										App that shows an overlay timer, visible above all other apps that acts as a constant reminder of how long you have been using your phone. It also provides statistics on how long you have been using individual apps for the past 24 hour
-									</p>
-
-									<a href="https://github.com/Zhoros/XenStream" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-								<img src="torranor.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Torranor</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">300+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Go</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Javascript</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										Sophisticated, high performant tool that allows you to distribute and download file from peer-to-peer network without having to install any local software.
-									</p>
-
-									<a href="https://github.com/Zhoros/Torranor" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
-
-							<div class="group bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-								<img src="recorder.png" class="rounded-3xl">
-									<br>
-									<h3 class="text-3xl font-bold mb-2">Web-ScreenRec</h3>
-									<span class="inline-block px-3 py-1 mb-2 bg-blue-100 text-blue-600 text-sm font-bold uppercase rounded-full">500+ Downloads</span>
-									<div class="flex gap-2 mb-2">
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">C#</span>
-											<span class="px-3 py-1 bg-slate-100 text-[10px] font-bold uppercase rounded-full">Javascript</span>
-									</div>
-									<p class="text-slate-600 mb-6 text-md">
-										Lightweight screen recorder running on the web that doesn't require any native installation. It supports recording screen, desktop audio and mic simultaneously and transcoding to .mp4 format
-									</p>
-
-									<a href="https://github.com/Zhoros/Web-ScreenRec" class="text-blue-600 hover:text-blue-800 font-medium transition-colors">Github link</a>
-							</div>
+                <!-- Project: Screen Aware -->
+                <div class="group bg-zinc-900/30 border border-zinc-900 rounded-xl p-5 hover:border-zinc-800 transition-colors flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-video w-full bg-zinc-900 rounded-lg mb-4 overflow-hidden flex items-center justify-center border border-zinc-800/50">
+                            <img src="screen.png" alt="Screen Aware" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <h3 class="font-bold text-lg text-zinc-200 group-hover:text-emerald-400 transition-colors">Screen Aware</h3>
+                        </div>
+                        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+                            An native Android implementation rendering screen-state metrics via a persistent canvas layout proxy. Prompts screen awareness via runtime analytics charts.
+                        </p>
+                        <br>
+                        <a href="https://github.com/Zhoros/ScreenAware" class="text-m text-emerald-400 hover:text-zinc-300 transition-colors">GitHub Link↗</a>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-zinc-900/80 flex flex-wrap gap-2 text-xs font-mono text-zinc-400 items-center justify-between">
+                        <div class="flex gap-2">
+                            <span>JAVA</span><span>•</span><span>ANDROID</span>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="py-12 border-t border-slate-200">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex space-x-6 text-sm font-medium">
-                <a href="https://github.com/zhoros" class="hover:underline">GitHub</a>
+        <hr class="border-zinc-900">
+
+        <section class="space-y-8">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-zinc-500">Technologies & frameworks I've used</h2>
+            
+            <div class="flex gap-4 flex-wrap">
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/go.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Go</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/react.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">React</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/svelte.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Svelte</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/js.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Javasript</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/typescript.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Typescript</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/html5.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">HTML5</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/java.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Java</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/c.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">C</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/cpp.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">C++</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/csharp.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">C#</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/python.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Python</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/sql.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">SQL</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/mongodb.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">MongoDB</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/nodejs.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">NodeJS</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/tools/caddy.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Caddy</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/tools/cmake.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">CMake</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/tools/docker.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Docker</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/tools/git.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Git</span>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-3">
+                    <img src="logos/tools/linux.svg" class="w-[75px] h-[75px] opacity-80 group-hover:opacity-100 transition-opacity select-none" draggable="false">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 group-hover:text-zinc-200 transition-colors">Linux</span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+    </main>
 
 </body>
 </html>
-
-
-
-
-
