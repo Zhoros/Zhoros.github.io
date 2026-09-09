@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Electra Solar Batam - Renewable Energy Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0B132B',
+                            900: '#070C1E',
+                            950: '#03060F',
+                        },
+                        brand: {
+                            orange: '#FF5722',
+                            'orange-hover': '#E04818',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full bg-navy-900/95 backdrop-blur-md z-50 border-b border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brand-orange text-white p-2.5 rounded-lg">
+                        <i class="fa-solid fa-solar-panel text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold text-white tracking-tight block leading-none">PT. ELECTRA SOLAR BATAM</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-brand-orange transition-colors">Tentang kami</a>
+                    <a href="#products" class="text-gray-300 hover:text-brand-orange transition-colors">Produk</a>
+                    <a href="#why-us" class="text-gray-300 hover:text-brand-orange transition-colors">Keunggulan kami</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-brand-orange transition-colors">Galeri</a>
+                    <a href="#contact" class="text-gray-300 hover:text-brand-orange transition-colors">Kontak</a>
+                </nav>
+
+                <!-- Call to Action Button (Ikon Telepon & Scroll ke #contact) -->
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="bg-brand-orange hover:bg-brand-orange-hover text-white px-5 py-2.5 rounded-md font-semibold text-sm transition-all shadow-lg shadow-brand-orange/20 flex items-center space-x-2">
+                        <i class="fa-solid fa-phone text-sm"></i>
+                        <span>Hubungi kami</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Ikon Telepon & Scroll ke #contact) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-navy-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="#about" class="block text-gray-300 hover:text-brand-orange py-2">Tentang kami</a>
+            <a href="#products" class="block text-gray-300 hover:text-brand-orange py-2">Produk kami</a>
+            <a href="#why-us" class="block text-gray-300 hover:text-brand-orange py-2">Keunggulan kami</a>
+            <a href="#gallery" class="block text-gray-300 hover:text-brand-orange py-2">Galeri</a>
+            <a href="#contact" class="block text-gray-300 hover:text-brand-orange py-2">Kontak Kami</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block bg-brand-orange text-white text-center py-2.5 rounded-md font-semibold mt-2">
+                <i class="fa-solid fa-phone mr-1"></i> Hubungi kami
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-navy-900 pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Background Pattern Decor -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-brand-orange blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-brand-orange blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-navy-800 border border-navy-800 text-brand-orange px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Leading Solar Energy Provider in Batam</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Powering Batam with <span class="text-brand-orange">Clean Energy</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg max-w-xl font-normal">
+                        PT. Electra Solar Batam menyediakan berbagai produk panel surya yang efisien untuk keperluan residensial, komersil dan agrikultur di kepulauan Riau.
+                    </p>
+                    
+                    <!-- Buttons Group (Ikon Telepon & Scroll ke #contact) -->
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start pt-2">
+                        <a href="#products" class="bg-brand-orange hover:bg-brand-orange-hover text-white px-6 py-3.5 rounded-md font-semibold text-center transition-all shadow-lg shadow-brand-orange/30">
+                            Lihat produk
+                        </a>
+                        <a href="#about" class="bg-navy-800 hover:bg-navy-800/80 text-white border border-slate-700 px-6 py-3.5 rounded-md font-semibold text-center transition-all">
+                            Pelajari lebih lanjut
+                        </a>
+                        <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-md font-semibold text-center transition-all flex items-center justify-center space-x-2 shadow-lg shadow-emerald-600/30">
+                            <i class="fa-solid fa-phone text-lg"></i>
+                            <span>Hubungi kami</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative mx-auto max-w-md md:max-w-none">
+                        <img src="images/solpan.jpg" alt="Solar Panel Installation" class="rounded-2xl shadow-2xl">
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl hidden sm:flex items-center space-x-4 border border-slate-100">
+                            <div class="bg-orange-100 text-brand-orange p-3 rounded-lg">
+                                <i class="fa-solid fa-leaf text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Sustainable Future</p>
+                                <p class="text-sm font-bold text-navy-900">100% Renewable Energy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Solar Engineers" class="w-full h-[420px] object-cover">
+                        <div class="absolute inset-0 bg-navy-900/20"></div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="inline-block text-brand-orange font-bold text-sm uppercase tracking-wider">About PT. Electra Solar Batam</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 leading-tight">Mitra terpercaya anda untuk tenaga surya di Batam</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Kami adalah perusahaan yang bergerak di bidang supplier elektronik dan general supplier. Kami hadir untuk mengedukasi dan menyediakan solusi Pembangkit Listrik Tenaga Surya (PLTS) bagi rumah tangga dan usaha kecil menengah di Batam dan Provinsi Kepulauan Riau. Kami percaya bahwa ketahanan energi dimulai dari rumah. Dengan memanfaatkan sinar matahari sebagai sumber energi gratis dan berkelanjutan, masyarakat dapat lebih siap menghadapi ketidakpastian global. Dalam skenario terburuk, pasokan minyak, gas, dan listrik tidak lagi tersedia secara normal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Penawaran kami</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Produk & Sistem</h2>
+                <p class="text-slate-600 mt-4">Kenalan dengan berbagai produk berbasis energi surya kami untuk berbagai keperluan</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1: On Grid -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-navy-900 text-brand-orange rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">On Grid System</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        PLTS On-Grid terhubung langsung dengan jaringan PLN — hemat tagihan listrik bulanan melalui penyesuaian beban daytime dan ekspor listrik berlebih (net metering).
+                    </p>
+                </div>
+
+                <!-- Product 2: Off Grid -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-navy-900 text-brand-orange rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-plug-circle-xmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Off Grid System</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        PLTS Off-Grid mandiri tanpa PLN — ideal untuk daerah terpencil, pulau, perkebunan, dan tower telekomunikasi.
+                    </p>
+                </div>
+
+                <!-- Product 3: Hybrid -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-navy-900 text-brand-orange rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-charging-station"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Hybrid System</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        PLTS Hybrid menggabungkan panel surya, baterai, dan PLN — fleksibel untuk rumah tangga & bisnis dengan backup saat listrik padam.
+                    </p>
+                </div>
+
+                <!-- Product 4: PJU -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-navy-900 text-brand-orange rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">PJU (Penerangan Jalan Umum)</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        all-in-one & two-in-one dengan LED hemat energi, tanpa instalasi kabel listrik.
+                    </p>
+                </div>
+
+                <!-- Product 5: Pompa Air Tenaga Surya -->
+                <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group md:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-navy-900 text-brand-orange rounded-lg flex items-center justify-center text-xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3">Pompa Air Tenaga Surya</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Pompa Air Tenaga Surya (PATS) untuk irigasi, perkebunan, peternakan, dan air bersih komunal — tanpa BBM, tanpa PLN.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-navy-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Mengapa PT. Electra Solar Batam</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Berkomitmen untuk memberikan kualitas terbaik</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 rounded-lg bg-navy-800/50 border border-navy-800">
+                    <div class="text-brand-orange text-3xl mb-4"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Peralatan Terbaik</h4>
+                    <p class="text-gray-400 text-sm">Kami hanya menggunakan peralatan berefisiensi tinggi dengan garansi yang pasti</p>
+                </div>
+                <div class="p-6 rounded-lg bg-navy-800/50 border border-navy-800">
+                    <div class="text-brand-orange text-3xl mb-4"><i class="fa-solid fa-users-gear"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Tim Ahli</h4>
+                    <p class="text-gray-400 text-sm">Tim teknisi kami memiliki pengalaman bertahun tahun dalam pemasangan panel surya</p>
+                </div>
+                <div class="p-6 rounded-lg bg-navy-800/50 border border-navy-800">
+                    <div class="text-brand-orange text-3xl mb-4"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h4 class="font-bold text-lg mb-2">Dukungan berkelanjutan</h4>
+                    <p class="text-gray-400 text-sm">Kami menyediakan dukungan berkelanjutan setelah pemasangan jika ada masalah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Proyek kami</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2">Galeri</h2>
+                <p class="text-slate-600 mt-4">A look at our recent installations, products, and solar implementations in the field.</p>
+            </div>
+
+            <!-- Image Grid Gallery -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img1.jpeg" alt="Project 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img2.jpeg" alt="Project 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img3.jpeg" alt="Solar Street Light (PJU)" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img4.jpeg" alt="Solar Irrigation Pump Setup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img5.jpeg" alt="Battery Inverter Bank" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img6.jpeg" alt="Off-Grid Installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img7.jpeg" alt="Solar Maintenance" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img8.jpeg" alt="Industrial Solar Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img9.jpeg" alt="Project 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img10.jpeg" alt="Project 10" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img11.jpeg" alt="Project 11" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img12.jpeg" alt="Project 12" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img13.jpeg" alt="Project 13" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img14.jpeg" alt="Project 14" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img15.jpeg" alt="Project 15" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img16.jpeg" alt="Project 16" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img17.jpeg" alt="Project 17" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img18.jpeg" alt="Project 18" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img19.jpeg" alt="Project 19" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img20.jpeg" alt="Project 20" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img21.jpeg" alt="Project 21" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="group relative rounded-xl overflow-hidden shadow-md aspect-square bg-slate-100">
+                    <img src="images/img22.jpeg" alt="Project 22" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECTION: Kontak Kami -->
+    <section id="contact" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-slate-200 max-w-4xl mx-auto text-center">
+                <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Hubungi Kami</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-900 mt-2 mb-4">Konsultasikan Kebutuhan Energi Anda</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto mb-8">
+                    Tim ahli kami siap membantu perencanaan dan pemasangan sistem Pembangkit Listrik Tenaga Surya (PLTS) terbaik untuk Anda.
+                </p>
+
+                <!-- Ringkasan Kontak -->
+                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-6 bg-slate-50 p-6 rounded-xl border border-slate-200 mb-8 w-full sm:w-auto">
+                    <div class="flex items-center space-x-3 text-navy-900">
+                        <i class="fa-brands fa-whatsapp text-3xl text-emerald-500"></i>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 font-medium uppercase">Nomor WhatsApp Resmi</p>
+                            <p class="text-xl font-bold tracking-wide">+62 813-7275-4904</p>
+                        </div>
+                    </div>
+                    <div class="hidden sm:block h-10 w-px bg-slate-300"></div>
+                    <div class="flex items-center space-x-3 text-navy-900">
+                        <i class="fa-solid fa-envelope text-3xl text-brand-orange"></i>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-500 font-medium uppercase">Email Penjualan</p>
+                            <p class="text-xl font-bold tracking-wide">sales@pltsbatam.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tombol Aksi Disusun Secara Vertikal -->
+                <div class="flex flex-col items-center justify-center gap-4 max-w-md mx-auto">
+                    <!-- Tombol WhatsApp -->
+                    <a href="https://wa.me/6281372754904" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center space-x-3 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-emerald-500/30 hover:scale-105">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Buka Chat WhatsApp</span>
+                    </a>
+
+                    <!-- Tombol Email (Berada Di Bawah WhatsApp) -->
+                    <a href="mailto:sales@pltsbatam.com" class="w-full inline-flex items-center justify-center space-x-3 bg-navy-900 hover:bg-navy-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-navy-900/20 hover:scale-105">
+                        <i class="fa-solid fa-envelope text-2xl"></i>
+                        <span>sales@pltsbatam.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-white pt-16 pb-12 border-t border-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-navy-800">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-brand-orange text-white p-2 rounded-lg">
+                            <i class="fa-solid fa-solar-panel text-xl"></i>
+                        </div>
+                        <span class="text-xl font-extrabold tracking-tight">PT. ELECTRA SOLAR BATAM</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Penyedia terkemuka sistem energi surya di Batam, Kepulauan Riau. Solusi energi yang berkelanjutan, andal, dan hemat biaya untuk semua.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-l-4 border-brand-orange pl-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-brand-orange transition-colors">Tentang kami</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition-colors">Produk</a></li>
+                        <li><a href="#why-us" class="hover:text-brand-orange transition-colors">Keunggulan kami</a></li>
+                        <li><a href="#gallery" class="hover:text-brand-orange transition-colors">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-brand-orange transition-colors">Kontak Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-l-4 border-brand-orange pl-3">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot text-brand-orange mr-3 mt-1"></i>
+                            <span>Batam, Kepulauan Riau, Indonesia</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-brands fa-whatsapp text-brand-orange mr-3"></i>
+                            <span>+6281372754904 (Whatsapp)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-brand-orange mr-3"></i>
+                            <span>sales@pltsbatam.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 text-center text-xs text-gray-500">
+                <p>&copy; 2026 PT. ELECTRA SOLAR BATAM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button (Ikon Telepon & Scroll ke #contact) -->
+    <a href="#contact" class="fixed bottom-6 right-6 bg-brand-orange hover:bg-brand-orange-hover text-white px-4 py-3 rounded-full shadow-2xl flex items-center space-x-3 z-50 transition-all hover:scale-105">
+        <i class="fa-solid fa-phone text-lg"></i>
+        <span class="font-semibold text-sm pr-1 hidden sm:inline">Hubungi kami</span>
+    </a>
+
+</body>
+</html>
